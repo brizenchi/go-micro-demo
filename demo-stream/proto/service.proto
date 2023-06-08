@@ -1,0 +1,20 @@
+syntax = "proto3";
+option go_package = "./proto";
+package proto;
+
+message User{
+  string id = 1;
+  string name = 2;
+}
+
+
+service Broadcast {
+  // rpc
+  rpc noneStream(User) returns (User);
+  // 服务端流
+  rpc returnStream(User) returns (stream User);
+  // 客户端流
+  rpc receiveStream(stream User) returns (User);
+  // 双向流
+  rpc allStream(stream User) returns (stream User);
+}
