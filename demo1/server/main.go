@@ -2,7 +2,7 @@ package main
 
 import (
 	"context"
-	"go-micro-demo/proto"
+	"go-micro-demo/demo1/proto"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/reflection"
 	"net"

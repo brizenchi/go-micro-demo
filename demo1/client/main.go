@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"go-micro-demo/proto"
+	"go-micro-demo/demo1/proto"
 	"google.golang.org/grpc/credentials/insecure"
 	"log"
 	"net/http"
